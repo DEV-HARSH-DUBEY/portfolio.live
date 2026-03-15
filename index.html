@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh-Dubey-Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="wrap" role="main">
+        <header>
+            <div class="brand">
+                <div class="logo" aria-hidden="true">SD</div>
+                <div>
+                    <div style="font-weight:700">Harsh Dubey</div>
+                    <div class="small">Frontend Engineer • Angular • Spring Boot</div>
+                </div>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#story">Story</a></li>
+                    <li class="nav-link"><a href="#projects">Projects</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">🌙</button>
+        </header>
+        <main>
+            <!-- Home Section -->
+            <section id="home" class="hero" aria-labelledby="hero-title">
+                <div class="intro">
+                    <h1 id="hero-title">I build delightful frontends and pragmatic backends</h1>
+                    <p>I'm a software developer with <strong>4 years</strong> of experience. I specialize in Angular for
+                        frontend and have built Spring Boot services for backend. Below is my story — a short journey
+                        through what I build and why.</p>
+                    <div class="typewriter-box"><span class="type" id="typewriter" aria-live="polite"></span></div>
+                    <div class="cta">
+                        <button class="btn-download-resume btn-primary" id="downloadResume"
+                            onclick="downloadResume()">Download Resume</button>
+                        <a type="button" class="btn-light" href="#projects">See Projects</a>
+                    </div>
+                </div>
+
+                <aside class="hero-aside" aria-label="Quick stats">
+                    <div class="stat">
+                        <div><strong>4</strong>
+                            <div class="muted">Years experience</div>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="stat">
+                        <div><strong>Angular</strong>
+                            <div class="muted">Primary frontend</div>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div><strong>Spring Boot</strong>
+                            <div class="muted">Backend projects</div>
+                        </div>
+                    </div>
+                    <div style="margin-top:8px" class="muted">Tip: Scroll down to follow the story of my work</div>
+                </aside>
+            </section>
+
+            <!-- Story Section -->
+            <section id="story" class="story" aria-label="Career story">
+                <h2 class="section-title">A Developer's Journey</h2>
+
+                <div class="chapter" data-reveal>
+                    <div class="marker" aria-hidden="true"></div>
+                    <div class="chapter-content">
+                        <h3>Beginning — curiosity and first lines of code</h3>
+                        <p>I started as a Junior Developer, building frontends with HTML, CSS, Bootstrap, and
+                            JavaScript.
+                            Those first projects sparked my curiosity and gave me confidence to explore deeper into web
+                            development.</p>
+                    </div>
+                </div>
+                <div class="chapter" data-reveal>
+                    <div class="marker" aria-hidden="true"></div>
+                    <div class="chapter-content">
+                        <h3>Growth — full‑stack exploration</h3>
+                        <p>I expanded my skills by creating projects with Node.js and Express.js for backend, React for
+                            frontend,
+                            and MongoDB as the database. Along the way, I mastered Git & GitHub for version control and
+                            collaboration.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="chapter" data-reveal>
+                    <div class="marker" aria-hidden="true"></div>
+                    <div class="chapter-content">
+                        <h3>Frontend Focus — Angular evolution</h3>
+                        <p>I dove deeply into frontend engineering with Angular, working across several versions (6, 10,
+                            12, and 16).
+                            This journey sharpened my understanding of component-driven design, performance
+                            optimization, and modern UI
+                            patterns.</p>
+                    </div>
+                </div>
+
+
+                <div class="chapter" data-reveal>
+                    <div class="marker" aria-hidden="true"></div>
+                    <div class="chapter-content">
+                        <h3>Design — wireframes and prototypes</h3>
+                        <p>I began designing wireframes and high‑fidelity prototypes to bring clarity to projects.
+                            This helped me merge creativity with technical execution and improve user experience.</p>
+                    </div>
+                </div>
+
+                <div class="chapter" data-reveal>
+                    <div class="marker" aria-hidden="true"></div>
+                    <div class="chapter-content">
+                        <h3>DevOps — pipelines and deployment</h3>
+                        <p>I built CI/CD pipelines and automated deployment systems, ensuring smoother releases and
+                            reliable
+                            delivery.
+                            This experience taught me the importance of scalability and efficiency in modern
+                            development.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="chapter" data-reveal>
+                    <div class="marker" aria-hidden="true"></div>
+                    <div class="chapter-content">
+                        <h3>Backend — Spring Boot journey</h3>
+                        <p>I transitioned into backend development with Spring Boot, creating robust microservices and
+                            focusing on clean architecture, testing, and maintainability.</p>
+                    </div>
+                </div>
+                <div class="chapter" data-reveal>
+                    <div class="marker" aria-hidden="true"></div>
+                    <div class="chapter-content">
+                        <h3>Current — Angular + Spring Boot</h3>
+                        <p>Today, I design scalable frontends with Angular and build Spring Boot microservices for
+                            business
+                            logic.
+                            My focus is on clean code, performance, and delivering seamless user experiences.</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- Projects Section -->
+
+            <section id="projects" aria-label="Projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects">
+                    <article class="project-card" tabindex="0"
+                        data-project='{"title":"Project A","desc":"Angular SPA with real-time features","tags":["Angular","WebSocket","RxJS"]}'>
+                        <h4>Project A</h4>
+                        <p class="project-content-text">A responsive single-page app with live updates and polished UI.
+                        </p>
+                        <div class="project-tags" aria-hidden="true"><span class="project-tag">Angular</span><span
+                                class="project-tag">RxJS</span><span class="project-tag">WebSocket</span></div>
+                    </article>
+                    <article class="project-card" tabindex="0"
+                        data-project='{"title":"Project B","desc":"Admin dashboard with Spring Boot APIs","tags":["Spring Boot","REST","Postgres"]}'>
+                        <h4>Project B</h4>
+                        <p class="project-content-text">Admin dashboard backed by Spring Boot microservices and secure
+                            APIs.</p>
+                        <div class="project-tags" aria-hidden="true"><span class="project-tag">Spring Boot</span><span
+                                class="project-tag">REST</span><span class="project-tag">Docker</span></div>
+                    </article>
+
+                    <article class="project-card" tabindex="0"
+                        data-project='{"title":"Project C","desc":"Design system and component library","tags":["Design System","Storybook","Angular"]}'>
+                        <h4>Project C</h4>
+                        <p class="project-content-text">Reusable component library and documentation for consistent UI.
+                        </p>
+                        <div class="project-tags" aria-hidden="true"><span class="project-tag">Storybook</span><span
+                                class="project-tag">Accessibility</span></div>
+                    </article>
+
+                    <article class="project-card" tabindex="0"
+                        data-project='{"title":"Project D","desc":"E-commerce platform with Angular and Spring Boot","tags":["E-commerce","Angular","Spring Boot"]}'>
+                        <h4>Project D</h4>
+                        <p class="project-content-text">Full-stack e-commerce platform with Angular frontend and Spring
+                            Boot
+                            backend.</p>
+                        <div class="project-tags" aria-hidden="true"><span class="project-tag">Angular</span><span
+                                class="project-tag">Spring Boot</span><span class="project-tag">MySQL</span></div>
+
+                    </article>
+
+                    <article class="project-card" tabindex="0"
+                        data-project='{"title":"Project E","desc":"Real-time chat app with Angular and WebSocket","tags":["Chat App","Angular","WebSocket"]}'>
+                        <h4>Project E</h4>
+                        <p class="project-content-text">Real-time chat application with Angular frontend and WebSocket
+                            backend.</p>
+                        <div class="project-tags" aria-hidden="true"><span class="project-tag">Angular</span><span
+                                class="project-tag">WebSocket</span><span class="project-tag">Node.js</span></div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section id="skills" aria-label="Skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skill-cards">
+                    <div class="skill-card" tabindex="0">
+                        <div class="card-img-box">
+                            <img src="assets/img/frontend.png" alt="Frontend img" class="card-img" />
+                        </div>
+                        <div class="card-text-content">
+                            <h4 class="skill-name">Frontend-End Development</h4>
+                            <p class="skill-description">Expertise in building complex SPAs with Angular, RxJS, and NgRx
+                                for
+                                state management.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card" tabindex="0">
+                        <div class="card-img-box">
+                            <img src="assets/img/backend.png" alt="Backend img" class="card-img" />
+                        </div>
+                        <div class="card-text-content">
+                            <h4 class="skill-name">Backend-End Development</h4>
+                            <p class="skill-description">Experience in developing RESTful APIs and microservices with
+                                Spring
+                                Boot.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card" tabindex="0">
+                        <div class="card-img-box">
+                            <img src="assets/img/design.png" alt="Design img" class="card-img" />
+                        </div>
+                        <div class="card-text-content">
+                            <h4 class="skill-name">UI/UX Design</h4>
+                            <p class="skill-description">Wireframing and prototyping to create intuitive user
+                                experiences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="card-img-box">
+                            <img src="assets/img/cicd.png" alt="CI/CD img" class="card-img" />
+                        </div>
+                        <div class="card-text-content">
+                            <h4 class="skill-name">DevOps</h4>
+                            <p class="skill-description">Building CI/CD pipelines and automating deployment processes
+                                for
+                                efficient delivery.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="contact-link-box">
+                    <h2>Let's Build Something Amazing Together!</h2>
+                    <div class="contact-links">
+                        <button class="link-btn btn-primary" onclick="openLink(1)">Github</button>
+                        <button class="link-btn btn-primary" onclick="openLink(2)">LinkedIn</button>
+                        <button class="link-btn btn-primary" onclick="openLink(3)">Instagram</button>
+                    </div>
+                </div>
+                <div class="contact-form-box">
+                    <h2 class="section-title">Contact Me</h2>
+                    <form class="contact-form" aria-label="Contact form" id="ContactForm"
+                        onsubmit="onContactSubmit(event)">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-input" id="name" name="name" autocomplete="off"
+                                pattern="^[a-zA-Z\s]+$" title="Please enter a valid name (letters and spaces only)"
+                                required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-input" id="email" name="email"
+                                pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" autocomplete="off"
+                                title="Please enter a valid email address (e.g. user@example.com)" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-textarea" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </div>
+                    </form>
+
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <p>Made with ❤️ by <b>Harsh Dubey</b></p>
+            </div>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
