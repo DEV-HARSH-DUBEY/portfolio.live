@@ -90,8 +90,10 @@ nav a:hover {
 }
 
 .logo {
-    width: 56px;
-    height: 56px;
+    min-width: 45px;
+    min-height: 56px;
+    max-width: 56px;
+    max-height: 56px;
     border-radius: 12px;
     background: linear-gradient(135deg, var(--accent), var(--accent-2));
     display: grid;
