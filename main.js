@@ -1,7 +1,9 @@
 const toggle = document.getElementById('theme-toggle');
+const profileIcon = document.getElementsByClassName('logo');
 toggle.addEventListener('click', () => {
     document.body.classList.toggle('light');
     toggle.textContent = document.body.classList.contains('light') ? '☀️' : '🌙';
+    // profileIcon[0].textContent = document.body.classList.contains('light') ? '😎' : '👨‍💻';
 });
 
 // Typewriter lines
@@ -51,22 +53,22 @@ function onContactSubmit(e) {
     e.preventDefault();
     const form = document.getElementById('ContactForm');
     const name = form.name.value.trim();
-    const email = form.email.value.trim();
+    // const email = form.email.value.trim();
     const message = form.message.value.trim();
-    if (!name || !email || !message) {
+    if (!name || !message) {
         alert('Please fill in all fields.');
         return;
     }
-    if (isMaliciousInput(name) || isMaliciousInput(email) || isMaliciousInput(message)) {
+    if (isMaliciousInput(name) || isMaliciousInput(message)) {
         alert('Invalid input detected. Please avoid using special characters or scripts.');
         return;
     }
 
-    let mailtoLink = `${toEmail}?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nFrom: ' + email)}`;
+    let mailtoLink = `${toEmail}?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
     window.open(mailtoLink, '_blank');
     // Simulate form submission
-    alert('Thank you for reaching out! I will get back to you soon.');
+    alert('👍Thanks for getting in touch! I’ll review your message and respond shortly');
     form.reset();
 
 }
