@@ -13,9 +13,10 @@
         content="Harsh Dubey, Angular Developer, UI/UX Designer, Spring Boot, Portfolio, Web Developer">
     <meta name="author" content="Harsh Dubey">
     <meta name="robots" content="index, follow">
+    <meta name="cache-control" content="no-cache, no-store, must-revalidate">
 
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' data: https:; script-src 'self' https:;">
+        content="default-src 'self'; img-src 'self' data: https:; script-src 'self' https:">
 
 
     <title>Harsh-Dubey-Portfolio</title>
@@ -308,6 +309,11 @@
                     </div>
                 </div>
                 <div class="contact-form-box">
+                    <p class="mail-text">👋 I’d love to hear from you — drop me a message anytime!</p>
+                    <a href="mailto:mailforharshdubey@gmail.com?subject=Contact&body=Hi" class="send-email-link">📧
+                        Email Me</a>
+                </div>
+                <!-- <div class="contact-form-box">
                     <h2 class="section-title">Contact Me</h2>
                     <form class="contact-form" aria-label="Contact form" id="ContactForm"
                         onsubmit="onContactSubmit(event)">
@@ -317,12 +323,7 @@
                                 pattern="^[a-zA-Z\s]+$" title="Please enter a valid name (letters and spaces only)"
                                 required />
                         </div>
-                        <!-- <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-input" id="email" name="email"
-                                pattern="^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" autocomplete="off"
-                                title="Please enter a valid email address (e.g. user@example.com)" required />
-                        </div> -->
+                      
                         <div class="form-group">
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-textarea" id="message" name="message" rows="5" required></textarea>
@@ -331,8 +332,8 @@
                             <button type="submit" class="btn-primary">Send Message</button>
                         </div>
                     </form>
+                </div> -->
 
-                </div>
             </section>
         </main>
         <footer>
@@ -341,7 +342,7 @@
             </div>
         </footer>
     </div>
-    <script src="main.js?version=1.0.1"></script>
+    <script src="main.js?version=1.0.2"></script>
 </body>
 
 </html>

@@ -437,6 +437,24 @@ nav a:hover {
     margin: 0px 5px;
 }
 
+.contact-form-box .mail-text {
+    margin: 0 0 12px 0;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.contact-form-box .send-email-link {
+    display: inline-block;
+    padding: 10px 14px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 8px 18px rgba(124, 92, 255, 0.12);
+    transition: box-shadow 0.3s ease;
+}
+
 .contact-form .form-label {
     display: block;
     margin-bottom: 6px;
@@ -486,7 +504,9 @@ nav a:hover {
         flex-direction: column;
         align-items: stretch;
     }
+
 }
+
 
 @media (prefers-reduced-motion:reduce) {
     * {
