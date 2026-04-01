@@ -66,7 +66,7 @@ function onContactSubmit(e) {
 
     let mailtoLink = `${toEmail}?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
     window.location.href = mailtoLink;
-    window.open(mailtoLink, '_blank');
+    // window.open(mailtoLink, '_blank');
     // Simulate form submission
     alert('👍Thanks for getting in touch! I’ll review your message and respond shortly');
     form.reset();
